@@ -2,16 +2,12 @@
 
 Boilerplate uses [React-TS-Bilerplate](https://github.com/rajnish42413/react-typescript-antd-boilerplate)
 
-<!-- <hr>
- <div style="width:100%"height="510px" >
-    <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1593402416/propshare/003.png" width="30%" height="300px" style="padding:5%">
-    <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1593402416/propshare/002.png" width="30%" height="300px" style="padding:5%">
-    <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1593402419/propshare/001.png" width="30%" height="300px" style="padding:5%">
-  </div>
+<hr>
+
   
-  <a href="https://top-pizza.netlify.app/">DEMO HERE</a>  
-  or
- https://top-pizza.netlify.app/
+  <a href="https://sova-app.netlify.app/">DEMO HERE</a>  
+  or -->
+ https://sova-app.netlify.app/
 
 
 <hr> -->
