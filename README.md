@@ -6,11 +6,11 @@ Boilerplate uses [React-TS-Bilerplate](https://github.com/rajnish42413/react-typ
 
   
   <a href="https://sova-app.netlify.app/">DEMO HERE</a>  
-  or -->
+  or 
  https://sova-app.netlify.app/
 
 
-<hr> -->
+<hr> 
 
 ## Features
 
