@@ -5,8 +5,12 @@ import { Provider } from 'react-redux';
 import store, { history } from '../redux/store';
 
 const Home = React.lazy(() => import('../screens/home/Home'));
+const HowWorks = React.lazy(() => import('../screens/work/index'));
 
-const publicPaths = [{ exact: true, path: '/', component: Home }];
+const publicPaths = [
+   { exact: true, path: '/', component: Home },
+   { exact: true, path: '/how-it-works', component: HowWorks }
+  ];
 
 const publicRoutes = publicPaths.map(({ path, ...props }) => <Route key={path} path={path} {...props} />);
 

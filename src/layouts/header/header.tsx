@@ -47,7 +47,7 @@ const RenderLinks = ({ className }: IPLinks) => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/">HOW IT WORKS</Link>
+          <Link to="/how-it-works">HOW IT WORKS</Link>
         </li>
         <li>
           <Link to="/">Pricing</Link>
