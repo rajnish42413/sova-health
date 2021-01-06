@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Col, Divider, Row, Typography, Image } from 'antd';
+import { Button, Col, Divider, Row, Typography } from 'antd';
 const bannerImage = require('../../assets/home-banner.webp');
 
 export default function HomeBanner() {
@@ -18,7 +18,7 @@ export default function HomeBanner() {
             <Button>Learn More</Button>
           </Col>
           <Col xs={24} sm={24} md={24} lg={12} xl={12} className="banner-img">
-            <Image src={bannerImage} />
+            <img src={bannerImage} alt="banner" width="100%" height="auto" />
           </Col>
         </Row>
       </div>

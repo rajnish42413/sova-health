@@ -31,7 +31,8 @@ Boilerplate uses [Create React App](https://github.com/rajnish42413/react-typesc
 ## Note ***
  - I dont use any font family.
  - only added landing page.
-
+ - Mock API use for services [Open](https://5ff581bd941eaf0017f36dc2.mockapi.io/sova/api/services)
+ - For "WHAT OUR CUSTOMERS SAY" and "AS SEEN IN" section json data use. (/src/constants/*)
 
 ## Getting Start
 

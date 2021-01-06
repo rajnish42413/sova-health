@@ -1,8 +1,11 @@
 @import 'settings';
 .top-header {
-  position: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -84,7 +87,6 @@
     display: inline-block;
   }
   .top-header {
-    position: inherit;
     nav {
       justify-content: flex-start;
     }

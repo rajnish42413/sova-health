@@ -9,6 +9,7 @@ import { feedbacks } from "../../constants/feedbacks.json";
 import { seenIns } from "../../constants/seenIn.json";
 import Axios from 'axios';
 import Loader from '../../components/Loader/index';
+import HomeBanner from './Banner';
 
 type Props = {};
 
@@ -34,6 +35,8 @@ const Home: React.FC<Props> = () => {
   return (
       fetching ? <Loader /> :    
       <AppLayout>
+      <HomeBanner />
+
       {renderWorkRelation()}
       <section>
         <div className="services main-container">
