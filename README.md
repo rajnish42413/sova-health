@@ -1,6 +1,6 @@
-# Soav Healt Task 7Jan 2021
+# Sova Healt Task 7Jan 2021
 
-Boilerplate uses [Create React App](https://github.com/rajnish42413/react-typescript-antd-boilerplate)
+Boilerplate uses [React-TS-Bilerplate](https://github.com/rajnish42413/react-typescript-antd-boilerplate)
 
 <!-- <hr>
  <div style="width:100%"height="510px" >
