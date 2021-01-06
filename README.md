@@ -1,38 +1,46 @@
-# React TypeScript Ant Design Boilerplate
+# Soav Healt Task 7Jan 2021
 
-React Boilerplate using TypeScript and Ant Design. This boilerplate uses [Create React App](https://github.com/facebook/create-react-app)
+Boilerplate uses [Create React App](https://github.com/rajnish42413/react-typescript-antd-boilerplate)
+
+<!-- <hr>
+ <div style="width:100%"height="510px" >
+    <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1593402416/propshare/003.png" width="30%" height="300px" style="padding:5%">
+    <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1593402416/propshare/002.png" width="30%" height="300px" style="padding:5%">
+    <img src="https://res.cloudinary.com/dh7apsl5o/image/upload/v1593402419/propshare/001.png" width="30%" height="300px" style="padding:5%">
+  </div>
+  
+  <a href="https://top-pizza.netlify.app/">DEMO HERE</a>  
+  or
+ https://top-pizza.netlify.app/
+
+
+<hr> -->
 
 ## Features
 
 - TypeScript language
 - LESS for styling
-- Airbnb's JavaScript (ES6) style guide.
+- JavaScript (ES6) style guide.
 - TSlint for TypeScript and StyleLint for LESS
 - Prettier for code formatter
 - Ant Design as UI framework
 - React hooks
+- Redux
 
-## Components
 
-- [Antd](https://ant.design/) as UI framework.
-- [Jest](https://jestjs.io/) as as test framework.
-- [LESS](http://lesscss.org/) as CSS preprocessing.
-- [Prettier](https://prettier.io/) for code formatter.
-- [React](https://facebook.github.io/react/) as front-end view library.
-- [Redux](https://redux.js.org/) for state container.
-- [Redux-Saga](https://github.com/redux-saga/redux-saga) to fetching asynchronous data with redux.
-- [StyleLint](https://stylelint.io/) for LESS linting.
-- [TSlint](https://palantir.github.io/tslint/) for TypeScript linting using Airbnb's JS style guide.
-- [TypeScript](https://www.typescriptlang.org/) as main language.
+## Note ***
+ - I dont use any font family.
+ - only added landing page.
+
 
 ## Getting Start
 
 Run the following commands in your terminal
 
 ```bash
-git clone https://github.com/rajnish42413/react-typescript-antd-boilerplate.git
+git clone https://github.com/rajnish42413/sova-health
 cd react-typescript-antd-boilerplate
-yarn install
+yarn 
 yarn start
 ```
 

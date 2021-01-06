@@ -45,8 +45,6 @@ module.exports = override(
       '@layout-header-background': '#29385c',
       '@input-height-lg': '55px',
       '@input-height-base': '55px',
-      '@btn-height-base': '55px',
-      '@btn-height-lg': '55px',
       '@select-single-item-height-lg': '55px',
     },
   }),
