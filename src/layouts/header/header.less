@@ -1,0 +1,98 @@
+@import 'settings';
+.top-header {
+  position: inherit;
+  z-index: 999;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  .brand-logo {
+    display: inline-block;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      flex-direction: row;
+      li {
+        list-style: none;
+        line-height: 64px;
+        margin: 0 1em;
+        a {
+          text-transform: uppercase;
+          color: #fff;
+        }
+        :active,
+        :focus,
+        :hover {
+          color: #ff555f;
+        }
+      }
+    }
+    .btn-header {
+      background-color: #ff555f;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+  }
+}
+#btn-toggle-md {
+  display: none;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 0px;
+}
+
+.drawer-links {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 1em;
+    li {
+      list-style: none;
+      padding: 1em;
+      a {
+        text-transform: uppercase;
+        color: #29385c;
+      }
+      :active,
+      :focus,
+      :hover {
+        color: #ff555f;
+      }
+    }
+  }
+}
+.ant-drawer-header-no-title .ant-drawer-close {
+  position: absolute;
+  right: 10px;
+}
+
+@media (max-width: @breakpoint-md) {
+  #btn-toggle-md {
+    display: inline-block;
+  }
+  .top-header {
+    position: inherit;
+    nav {
+      justify-content: flex-start;
+    }
+    .btn-header {
+      display: none;
+    }
+  }
+  .nav-links {
+    display: none;
+  }
+}

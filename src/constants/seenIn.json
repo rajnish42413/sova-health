@@ -1,0 +1,33 @@
+{
+    "seenIns" :[
+        {
+            "id":1,
+            "link":"https://health.economictimes.indiatimes.com/news/industry/nutrition-in-india-is-still-being-looked-at-very-superficially-tanveer-singh/73077718",
+            "icon" :"https://st.etb2bimg.com/Themes/Release/images/site-logos/et-healthworld.png"
+        },
+        {
+            "id":1,
+            "link":"http://bwwellbeingworld.businessworld.in/article/Reasons-why-certain-bodies-react-insignificantly-to-various-diet-forms/24-01-2020-182684/",
+            "icon" :"http://bwwellbeingworld.businessworld.in/static/images/BW-wellness-logo537x132.png"
+        },
+        {
+            "id":1,
+            "link":"https://www.theweek.in/wire-updates/business/2019/12/18/pwr12-sova%20health.html",
+            "icon" :"https://www.theweek.in/content/dam/week/logo/The-Week-Logo-Big.png"
+        },
+        {
+            "id":1,
+            "link":"https://m.dailyhunt.in/news/india/english/news+patrolling-epaper-newspatr/bringing+science+to+nutrition+sova+health+aims+to+take+the+guesswork+out+of+eating+right-newsid-n154003248?ss=wsp&s=wa",
+            "icon" :"https://m.dailyhunt.in/desktop_site/news/temp_daily/images/dailyHunt_logo.svg"
+        },{
+            "id":1,
+            "link":"https://health.economictimes.indiatimes.com/news/industry/nutrition-in-india-is-still-being-looked-at-very-superficially-tanveer-singh/73077718",
+            "icon" :"https://st.etb2bimg.com/Themes/Release/images/site-logos/et-healthworld.png"
+        },
+        {
+            "id":1,
+            "link":"https://m.dailyhunt.in/news/india/english/news+patrolling-epaper-newspatr/bringing+science+to+nutrition+sova+health+aims+to+take+the+guesswork+out+of+eating+right-newsid-n154003248?ss=wsp&s=wa",
+            "icon" :"https://m.dailyhunt.in/desktop_site/news/temp_daily/images/dailyHunt_logo.svg"
+        }
+    ]
+}

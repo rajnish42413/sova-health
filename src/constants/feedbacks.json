@@ -1,0 +1,22 @@
+{
+    "feedbacks": [
+        {
+            "id": 1,
+            "name": "Parneeta",
+            "message": "“I was going through a really hard phase of my life dealing with PCOD, Face Acne and Weight Gain issues. The team helped me understand what nutrients my body needs in tracked progress over a period of time. I realized that personalized and flexible nutrition plans have helped to manage by EATING RIGHT.”",
+            "image": "https://static.wixstatic.com/media/9d3b92_961696da08c44bb28fabe8696c66d08d~mv2.png/v1/fill/w_185,h_185,al_c,q_85,usm_0.66_1.00_0.01/PARNEETA.webp"
+        },
+        {
+            "id": 1,
+            "name": "Siddhant",
+            "message": "“Its an amazing feeling to see the second blood report. I was already feeling better but now I could see the progress! The root cause analysis was a wake up call for me. I became more mindful about the food I was eating. It was cool that the changes weren’t radical and my mother didn’t have to change what was being cooked already.”",
+            "image": "https://static.wixstatic.com/media/9d3b92_efd10ceec0b448aa81bde7188a43dff5~mv2.png/v1/fill/w_185,h_185,al_c,q_85,usm_0.66_1.00_0.01/sid.webp"
+        },
+        {
+            "id": 1,
+            "name": "Kritika",
+            "message": "“I can eat freely and am convinced that I am giving my body the right foods and the nutrients that it needs.Weight loss is a part of my motivation to eat right but it's not the only reason that I am doing this. For me, it's about being healthier. Eating what my body really needs keeps me from being tempted to eat the wrong thing. And fortunately, with the combination of eating right, exercising and generally trying to be healthier, I've also lost weight.”",
+            "image": "https://static.wixstatic.com/media/9d3b92_7829cf0a8b1b4ed08a0ad8dbd47f194f~mv2.png/v1/fill/w_185,h_185,al_c,q_85,usm_0.66_1.00_0.01/Kritika.webp"
+        }
+    ]
+}

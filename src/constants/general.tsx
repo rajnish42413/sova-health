@@ -1,1 +1,5 @@
-export const GITHUB_LINK = 'https://github.com/rajnish42413/react-typescript-antd-boilerplate.git';
+export const colors = {
+  'primary-color': '#29385c'
+};
+
+export const API_URL = 'https://5ff581bd941eaf0017f36dc2.mockapi.io/sova/api/';
