@@ -12,7 +12,7 @@ export default function HowWorks() {
     <AppLayout>
       <section className="section" style={{ backgroundColor: '#EBEFEF' }}>
         <div className="main-container">
-          <Row gutter={[24, 16]} align="middle" className="home-banner">
+          <Row gutter={[24, 16]} align="middle" className="hiw-banner">
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               <Typography className="banner-content">
                 <Typography.Title level={1}>Discover a Healthier You</Typography.Title>
