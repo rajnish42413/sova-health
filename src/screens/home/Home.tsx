@@ -88,7 +88,7 @@ const Home: React.FC<Props> = () => {
 export default Home;
 
 const renderWorkRelation = () => (
-  <section className="section bg-gray">
+  <section className="section bg-gray" style={{marginTop:'-10px'}}>
     <div className="py-3 main-container">
       <TTitle
         level={1}
