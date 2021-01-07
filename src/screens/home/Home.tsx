@@ -4,12 +4,13 @@ import TTitle from '../../components/title';
 import { colors } from '../../constants/general';
 import { CloseOutlined, GitlabOutlined } from '@ant-design/icons';
 import './Home.less';
-import {  Card, Carousel, Col, Row } from 'antd';
+import { Card, Col, Row } from 'antd';
 import { feedbacks } from "../../constants/feedbacks.json";
 import { seenIns } from "../../constants/seenIn.json";
 import Axios from 'axios';
 import Loader from '../../components/Loader/index';
 import HomeBanner from './Banner';
+import Slider from 'react-slick';
 
 type Props = {};
 
@@ -17,56 +18,56 @@ const Home: React.FC<Props> = () => {
   const [fetching, setFetching] = useState(true);
   const [services, setServices] = useState([] as Array<IService>);
 
-  const getData = async() =>{
+  const getData = async () => {
     setFetching(true);
     try {
-     const { data } = await Axios(`services`);
-     setServices(data);
-     setFetching(false);
+      const { data } = await Axios(`services`);
+      setServices(data);
+      setFetching(false);
     } catch (error) {
-     setFetching(false);
+      setFetching(false);
     }
- }
+  }
 
   useEffect(() => {
     getData()
-  },[]);
+  }, []);
 
   return (
-      fetching ? <Loader /> :    
+    fetching ? <Loader /> :
       <AppLayout>
-      <HomeBanner />
+        <HomeBanner />
 
-      {renderWorkRelation()}
-      <section>
-        <div className="services main-container">
-          <TTitle
-            level={1}
-            borderColor={colors['primary-color']}
-            textColor={colors['primary-color']}
-            className="text-center"
-            dividerWidth="79%"
-          >
-            WE HELP YOU ACHIEVE YOUR HEALTH GOALS
+        {renderWorkRelation()}
+        <section>
+          <div className="services main-container">
+            <TTitle
+              level={1}
+              borderColor={colors['primary-color']}
+              textColor={colors['primary-color']}
+              className="text-center"
+              dividerWidth="79%"
+            >
+              WE HELP YOU ACHIEVE YOUR HEALTH GOALS
           </TTitle>
-          <Row className="py-3" gutter={[48, 16]}>
-            {services?.map(service => <Col md={24} lg={8} className="service-col">
-              <Card hoverable className="service-card"  >
-                <p><GitlabOutlined /></p>
-                <h3>{service?.title}</h3>
-                <p className="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-              </Card>
-            </Col>)}
-          </Row>
-        </div>
-      </section>
-      <section>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <iframe width="660" height="350" src="https://www.youtube.com/embed/-3O3TVzbEJ8" title="sova healt"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-        </div>
-      </section>
-      {/* <section className="main-container py-3">
+            <Row className="py-3" gutter={[48, 16]}>
+              {services?.map(service => <Col md={24} lg={8} className="service-col">
+                <Card hoverable className="service-card"  >
+                  <p><GitlabOutlined /></p>
+                  <h3>{service?.title}</h3>
+                  <p className="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </Card>
+              </Col>)}
+            </Row>
+          </div>
+        </section>
+        <section>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <iframe width="660" height="350" src="https://www.youtube.com/embed/-3O3TVzbEJ8" title="sova healt"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+          </div>
+        </section>
+        {/* <section className="main-container py-3">
         <TTitle
           level={1}
           borderColor={colors['primary-color']}
@@ -78,17 +79,17 @@ const Home: React.FC<Props> = () => {
           </TTitle>
      
       </section> */}
-      {renderFeedbacks()}
-      {renderPartners()}
-      {renderSeeIn()}
-    </AppLayout>
+        {renderFeedbacks()}
+        {renderPartners()}
+        {renderSeeIn()}
+      </AppLayout>
   );
 };
 
 export default Home;
 
 const renderWorkRelation = () => (
-  <section className="section bg-gray" style={{marginTop:'-10px'}}>
+  <section className="section bg-gray" style={{ marginTop: '-10px' }}>
     <div className="py-3 main-container">
       <TTitle
         level={1}
@@ -132,20 +133,26 @@ const renderFeedbacks = () => (
     >
       WHAT OUR CUSTOMERS SAY
   </TTitle>
-    <Carousel autoplay effect="scrollx" dots={true} arrows={true} style={{ marginTop: '3rem' }}>
-      {feedbacks?.map(feedback =>
-        <section key={feedback.id} className="bg-gray">
-          <div className="feedback-item">
-            <img src={feedback?.image} alt="feedback" />
-            <div className="profile">
-              <p>{feedback?.message}</p>
-              <h3>-{feedback?.name}</h3>
-            </div>
-          </div>
-        </section>)}
-    </Carousel>
+    {feedbackItms()}
   </section>
 )
+
+export const feedbackItms = () => (
+  <div className="my-3">
+  <Slider autoplay  dots={true} arrows={true}>
+    {feedbacks?.map(feedback =>
+      <section key={feedback.id} className="bg-gray">
+        <div className="feedback-item">
+          <img src={feedback?.image} alt="feedback" />
+          <div className="profile">
+            <p>{feedback?.message}</p>
+            <h3>-{feedback?.name}</h3>
+          </div>
+        </div>
+      </section>)}
+  </Slider>
+  </div>
+);
 
 
 const renderPartners = () => (
@@ -159,13 +166,13 @@ const renderPartners = () => (
     >
       OUR PARTNERS
    </TTitle>
-    <div className="my-3" style={{width:'100%'}}>
-      <img 
-        src="https://static.wixstatic.com/media/9d3b92_e1d9d90c304c4ef999d674989bf1eaff~mv2.png/v1/fill/w_875,h_260,al_c,q_85,usm_0.66_1.00_0.01/partners.webp" 
-        alt="partners" 
-         width="100%"
-         height="auto"
-        />
+    <div className="my-3" style={{ width: '100%' }}>
+      <img
+        src="https://static.wixstatic.com/media/9d3b92_e1d9d90c304c4ef999d674989bf1eaff~mv2.png/v1/fill/w_875,h_260,al_c,q_85,usm_0.66_1.00_0.01/partners.webp"
+        alt="partners"
+        width="100%"
+        height="auto"
+      />
     </div>
   </section>
 )

@@ -1,3 +1,5 @@
+@import 'settings';
+
 .hiw-banner {
   .banner-content {
     h1.ant-typography,
@@ -17,6 +19,214 @@
       border-width: 3px;
       min-width: 93%;
       width: 93%;
+    }
+  }
+}
+
+/* Timeline */
+.timeline {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100%;
+  padding: 250px 0;
+  transition: all 1s;
+  counter-reset: count;
+  list-style-type: none;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: calc(20% - 25px);
+  height: 3px;
+  background: #000;
+}
+
+.timeline ol li {
+  .count {
+    background: #2cb173;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+  }
+  .content {
+    position: absolute;
+    left: calc(50% + 7px);
+    width: 200px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: black;
+    background: white;
+    box-sizing: border-box;
+    h3 {
+      font-weight: 600;
+      font-size: 1em;
+    }
+    p {
+      font-weight: normal;
+      font-size: 0.8em;
+    }
+    .anticon {
+      color: #000;
+      font-size: 1.8em;
+      position: absolute;
+      left: -30px;
+    }
+  }
+}
+
+.timeline ol li:nth-child(odd) .content {
+  top: -16px;
+  transform: translateY(-100%);
+  .count {
+    bottom: -30px;
+  }
+}
+
+.timeline ol li:nth-child(odd) .content::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) .content {
+  top: calc(100% + 16px);
+  .count {
+    top: -30px;
+  }
+}
+
+.timeline ol li:nth-child(even) .content::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+//services
+.hiw-services {
+  .service-itm {
+    padding: 1em;
+    .ant-card {
+      background-color: #f1f1f1;
+    }
+    .ant-card-body {
+      h3 {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      p {
+        font-weight: bold;
+        color: #3c3c3c;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+//health
+.hiw-health {
+  .healt-card {
+    background-color: #f5f4f4;
+    margin: 1em 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+
+    .anticon {
+      color: #2cb173;
+      margin-bottom: 15px;
+      font-size: 3rem;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 15px;
+      padding: 0 1em;
+      text-align: center;
+    }
+    p {
+      font-weight: bold;
+      color: #3c3c3c;
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    :after {
+      content: '';
+      background-color: #fff;
+      display: block;
+      width: 120%;
+      height: 109px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      transform: rotate(8deg);
+    }
+  }
+}
+@media (max-width: @breakpoint-md) {
+  .hiw-banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1em;
+    div.ant-typography,
+    .ant-typography p {
+      margin: 1.5em 0;
+    }
+  }
+  .timeline ol {
+    position: inherit;
+    padding: 0;
+    li {
+      position: inherit;
+      display: block;
+      background: transparent;
+      width: 90%;
+      float: right;
+      height: auto;
+      list-style: none;
+      border-left: 2px solid #000;
+      padding-left: 1em;
+      .content {
+        position: inherit;
+        width: 100%;
+        transform: none;
+        padding-left: 25px;
+        .anticon {
+          position: inherit;
+        }
+        .count {
+          position: relative;
+          left: -38px;
+        }
+      }
+    }
+  }
+  .timeline ol li:nth-child(odd) .content,
+  .timeline ol li:nth-child(even) .content {
+    transform: none;
+    .count {
+      top: 25px;
     }
   }
 }
