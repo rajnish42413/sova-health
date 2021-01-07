@@ -36,7 +36,7 @@ Run the following commands in your terminal
 
 ```bash
 git clone https://github.com/rajnish42413/sova-health
-cd react-typescript-antd-boilerplate
+cd sova-health
 yarn 
 yarn start
 ```
